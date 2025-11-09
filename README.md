@@ -22,7 +22,7 @@ Podés copiarla directamente en tu `README.md`.
 
 ---
 
-## Mejora N.º 4: Barras de Progreso de Habilidades
+## Mejora N.º 5: Barras de Progreso de Habilidades
 
 ### 🧩 Descripción de la mejora
 
