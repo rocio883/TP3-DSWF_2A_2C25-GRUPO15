@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/style.css";
+import React from "react";
+import Gallery from "./gallery/Gallery";
 
 function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -8,6 +10,15 @@ function Characters() {
   const [loading, setLoading] = useState(false);
   const [totalPages, setTotalPages] = useState(1);
   const [setError] = useState(null);
+
+  // ✅ Array de imágenes para la galería
+  const galleryImages = [
+    { url: "/images/1.jpg", thumbnailUrl: "/images/1.jpg", alt: "Logo1", title: "Logo 1" },
+    { url: "/images/2.jpg", thumbnailUrl: "/images/2.jpg", alt: "Logo2", title: "Logo 2" },
+    { url: "/images/3.jpg", thumbnailUrl: "/images/3.jpg", alt: "Logo3", title: "Logo 3" },
+    { url: "/images/4.jpg", thumbnailUrl: "/images/4.jpg", alt: "Logo4", title: "Logo 4" },
+    // agregá más imágenes según necesites
+  ];
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -36,29 +47,18 @@ function Characters() {
     <section className="characters-section">
       <h2>PERSONAJES DE GAME OF THRONES</h2>
       <p className="characters-intro">
-        Data obtenida de la API pública{" "}
-        <strong>"Game of Thrones Character Api"</strong>
+        Data obtenida de la API pública <strong>"Game of Thrones Character Api"</strong>
       </p>
 
-      {/* ✅ Controles arriba */}
+      {/* Controles de paginación arriba */}
       <div className="pagination-controls top-controls">
-        <button
-          className="pagination-btn"
-          onClick={prevPage}
-          disabled={page === 1}
-        >
+        <button className="pagination-btn" onClick={prevPage} disabled={page === 1}>
           ◀ Anterior
         </button>
-
         <span className="pagination-info">
           Página {page} / {totalPages}
         </span>
-
-        <button
-          className="pagination-btn"
-          onClick={nextPage}
-          disabled={page === totalPages}
-        >
+        <button className="pagination-btn" onClick={nextPage} disabled={page === totalPages}>
           Siguiente ▶
         </button>
       </div>
@@ -67,6 +67,7 @@ function Characters() {
         <p className="loading">Cargando personajes...</p>
       ) : (
         <>
+          {/* Grid de personajes */}
           <div className="characters-grid">
             {characters.map((char) => (
               <div key={char.id} className="character-card">
@@ -94,28 +95,24 @@ function Characters() {
             ))}
           </div>
 
-          {/* ✅ Controles abajo */}
+          {/* Controles de paginación abajo */}
           <div className="pagination-controls bottom-controls">
-            <button
-              className="pagination-btn"
-              onClick={prevPage}
-              disabled={page === 1}
-            >
+            <button className="pagination-btn" onClick={prevPage} disabled={page === 1}>
               ◀ Anterior
             </button>
-
             <span className="pagination-info">
               Página {page} / {totalPages}
             </span>
-
-            <button
-              className="pagination-btn"
-              onClick={nextPage}
-              disabled={page === totalPages}
-            >
+            <button className="pagination-btn" onClick={nextPage} disabled={page === totalPages}>
               Siguiente ▶
             </button>
           </div>
+
+          {/* === Sección de Galería === */}
+          <section className="gallerySection">
+            <h2>Galería de Imágenes</h2>
+            <Gallery images={galleryImages} />
+          </section>
         </>
       )}
     </section>
