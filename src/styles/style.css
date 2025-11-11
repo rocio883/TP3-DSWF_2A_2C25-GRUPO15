@@ -165,7 +165,7 @@ body {
 
 .team-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px var(--primary-color);
 }
 
 .team-card img {
@@ -655,6 +655,53 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 999;
+}
+
+.main-page,
+.team-section,
+.houses-section,
+.characters-section,
+.member-page,
+.log-page {
+  opacity: 0;
+  animation: pageFadeIn 2.5s ease forwards;
+}
+
+.team-card,
+.house-card,
+.character-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.team-card,
+.house-card,
+.character-card,
+.btn {
+  transition: all 0.4s ease;
 }
 
 /* === MEDIA QUERIES === */
