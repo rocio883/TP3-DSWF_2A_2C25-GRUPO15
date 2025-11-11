@@ -70,6 +70,51 @@ Los botones de paginación se ubican tanto en la parte **superior como inferior*
 
 ---
 
+## Mejora N.º 4: Galería de Imágenes Interactiva
+### Descripción de la mejora
+
+Se implementó un componente denominado Gallery, encargado de mostrar un conjunto de imágenes en un grid interactivo, mejorando la presentación visual y la experiencia del usuario dentro del sitio. Al hacer clic en cualquier imagen, esta se abre en un lightbox con navegación, zoom y opción de cierre mediante botón o tecla ESC.
+
+Esta mejora permite al usuario explorar las imágenes de manera más intuitiva y atractiva, aplicando conceptos de React, CSS moderno y diseño responsivo.
+
+**Características principales:**
+
+* Grid de miniaturas de imágenes con tamaño uniforme, manteniendo la proporción de las imágenes originales.
+
+* Al hacer clic, la imagen se muestra en un lightbox modal centrado en pantalla.
+
+* Navegación entre imágenes mediante botones de “siguiente” y “anterior”.
+
+* Funcionalidad de zoom al hacer clic sobre la imagen, con cursor adaptativo.
+
+* Cierre del lightbox mediante botón de cerrar o tecla ESC.
+
+* Diseño responsivo: se adapta a distintos tamaños de pantalla y dispositivos.
+
+*  Estilos y animaciones suaves con hover, sombras y transiciones CSS para mejorar la experiencia visual.
+
+### Capturas de pantalla
+#### Antes de la mejora
+
+La sección de galería no estaba presente en la aplicación. 
+![Antes - sin galeria de fotos](public/antesmejora4.jpg)
+
+#### Después de la mejora
+
+Se agregó la galería con grid de miniaturas y lightbox interactivo.
+
+![Despues-con galeria de fotos](public/mejora4.jpg)
+
+####  Ubicación y archivos modificados
+
+* Componente principal: src/components/gallery/Gallery.jsx
+
+* CEstilos: src/components/gallery/gallery.module.css
+
+* C Integración en: src/App.jsx (sección de Galería)
+
+---
+
 ## Mejora N.º 5: Barras de Progreso de Habilidades
 
 ### Descripción de la mejora
