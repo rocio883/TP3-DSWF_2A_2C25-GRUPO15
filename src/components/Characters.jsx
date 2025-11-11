@@ -7,6 +7,7 @@ function Characters() {
   const limit = 8; // 8 personajes por página → 2 filas de 4
   const [loading, setLoading] = useState(false);
   const [totalPages, setTotalPages] = useState(1);
+  const [setError] = useState(null);
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -26,7 +27,7 @@ function Characters() {
     };
 
     fetchCharacters();
-  }, [page]);
+  }, [page, setError]);
 
   const nextPage = () => setPage((p) => Math.min(p + 1, totalPages));
   const prevPage = () => setPage((p) => Math.max(p - 1, 1));
