@@ -15,6 +15,23 @@
 Este proyecto forma parte de la **evolución del sitio SPA (Single Page Application)** iniciado en los trabajos prácticos anteriores (TP1 y TP2).  En esta etapa, se implementaron mejoras visuales e interactivas para optimizar la experiencia del usuario, aplicando los conceptos aprendidos. El objetivo general fue **aplicar cinco mejoras sugeridas** demostrando dominio de componentes, estilos, efectos visuales, y adaptación responsive.
 
 
+## Mejora N.º 1: Mejora de la Interfaz: Animaciones Suaves
+
+### Descripción de la mejora
+
+Se agregaron animaciones suaves para que cada parte de la página tenga un movimiento o efecto al mostrarse, para que los cambios de secciones y las cards no aparezcan de golpe, sin transiciones.
+
+Se mejoraron los hover de las tarjetas. Se cambió el color de hover del borde, de un gris al color principal que usamos en los botones y demás. Es un detalle que le da más personalidad a la web y hace que todo combine mejor.
+
+Ejemplo de esta última mejora:
+
+#### Antes de la mejora
+
+![Antes](public/hover-before.jpeg)
+
+#### 🔹 Después de la mejora
+
+![Después](public/hover-after.jpeg)
 
 ---
 
@@ -52,24 +69,6 @@ Los botones de paginación se ubican tanto en la parte **superior como inferior*
 * Estilos visuales: `src/styles/styles.css` y `src/styles/animations.css`.
 
 ---
-
-## Mejora N.º 1: Mejora de la Interfaz: Animaciones Suaves
-
-### Descripción de la mejora
-
-Se agregaron animaciones suaves para que cada parte de la página tenga un movimiento o efecto al mostrarse, para que los cambios de secciones y las cards no aparezcan de golpe, sin transiciones.
-
-Se mejoraron los hover de las tarjetas. Se cambió el color de hover del borde, de un gris al color principal que usamos en los botones y demás. Es un detalle que le da más personalidad a la web y hace que todo combine mejor.
-
-Ejemplo de esta última mejora:
-
-#### Antes de la mejora
-
-![Antes](public/hover-after.jpeg)
-
-#### 🔹 Después de la mejora
-
-![Después](public/hover-after.jpeg)
 
 ## Mejora N.º 5: Barras de Progreso de Habilidades
 
