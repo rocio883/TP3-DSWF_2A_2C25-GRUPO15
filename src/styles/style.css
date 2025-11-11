@@ -663,46 +663,41 @@ body {
 .characters-section,
 .member-page,
 .log-page {
-  opacity: 0;
-  animation: pageFadeIn 2.5s ease forwards;
+    opacity: 0;
+    animation: pageFadeIn 2.5s ease forwards;
 }
 
-.team-card,
 .house-card,
 .character-card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
 }
 
 @keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes pageFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.team-card,
-.house-card,
-.character-card,
-.btn {
-  transition: all 0.4s ease;
-}
 
 /* === MEDIA QUERIES === */
 

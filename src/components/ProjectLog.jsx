@@ -88,10 +88,35 @@ function ProjectLog() {
         </article>
 
         <article className="log-entry">
-          <h2>TP3 – To be continued...</h2>
+          <h2>TP3 – Evolución del Proyecto SPA</h2>
+          <h3>Organización</h3>
           <p>
-            Reflexiones finales y evolución completa del proyecto quedarán
-            registradas en esta sección.
+            Como ya teníamos la base sólida de los TPs anteriores, nos juntamos
+            para revisar detalles y dejar el proyecto lo más completo y prolijo
+            posible. Volvimos a realizar la reunión por Meet para repasar la
+            consigna y ver qué realizabamos en conjunto y qué consigna podiamos
+            dividirla.
+          </p>
+
+          <h3>Desafíos y soluciones</h3>
+          <p>
+            Nos encontramos con algunos detalles en las animaciones y los
+            efectos CSS que no quedaban del todo como queríamos. Por momentos
+            algunas transiciones no funcionaban bien en todas las secciones (por
+            ejemplo, las cards de casas y personajes). Fuimos revisando el
+            código y aplicando correcciones hasta que todo quedara parejo y
+            visualmente más limpio.
+          </p>
+          <h3>Trabajo en equipo y reflexión final</h3>
+          <p>
+            Nos dimos cuenta que algunas cosas las trabajabamos mejor en
+            conjunto, y otras en las que cada uno quizás se sentía mejor
+            trabajando individualmente. Algunas consignas las realizamos entre
+            todos mientras que algunas otras dividimos trabajo y luego nos
+            juntabamos para dar y aceptar sugerencias entre nosotros. Creemos
+            que fue un proyecto que nos sirvió no solo para mejorar nuestro
+            desarrollo sino también para mejorar nuestras soft skills y aprender
+            cosas nuevas del trabajo en equipo.
           </p>
         </article>
 
